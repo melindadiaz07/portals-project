@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ImageMap from 'image-map'
 import archway from '../images/temp-archway.png'
 
 
@@ -15,14 +16,19 @@ const Home = () => {
   const updateDestDisplay = () => {
     console.log(destination)
   }
+  const resizeImgMap = () => {
+    ImageMap('img[usemap]')
+  }
 
   useEffect(updateDestDisplay, [destination])
 
+  useEffect(resizeImgMap, [])
 
+  
 
   return(
   <div>
-    <img src={archway} alt="archway" useMap="#image-map"/>
+    <img src={archway} alt="archway" useMap="#image-map" id="archway" />
 
 
    
@@ -31,6 +37,8 @@ const Home = () => {
         <area  alt="desert" title="desert" href="desert" coords="557,86,59" shape="circle" onClick={(e) => portalClick(e)}/>
         <area  alt="forest" title="forest" href="forest" coords="868,348,80" shape="circle" onClick={(e) => portalClick(e)}/>
     </map>
+
+    <script>ImageMap('img[usemap]')</script>
 
 
     

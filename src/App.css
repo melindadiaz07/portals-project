@@ -21,3 +21,16 @@ body{
   width: 7vw;
   z-index: 1;
 }
+
+.map-link{
+  position: absolute;
+  top: 20vh;
+  left: 30vw;
+}
+
+#abydos-image{
+  width: 80vw;
+  position: absolute;
+  top: 7vh;
+  left: 10vw;
+}

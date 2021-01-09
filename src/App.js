@@ -8,6 +8,7 @@ import {
 import Home from './components/Home'
 import Nav from './components/Nav'
 import Map from './components/Map'
+import Abydos from './components/Abydos'
 
 function App() {
   return (
@@ -18,13 +19,11 @@ function App() {
 
       <Switch>
 
-        <Route exact path="/" >
-          <Home />
-        </Route>
+        <Route exact path="/" render={() => <Home />} />
+          
+        <Route exact path="/map" render={() => <Map />} />
 
-        <Route exact path="/Map">
-          <Map />
-        </Route>
+        <Route exact path="/abydos" render={() => <Abydos />} />
 
       
       </Switch>

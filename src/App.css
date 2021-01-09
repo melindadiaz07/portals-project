@@ -9,3 +9,9 @@ body{
   bottom: 0;
   right: 0;
 }
+
+#map-image{
+  width: 80vw;
+  position: absolute;
+  left: 10vw;
+}

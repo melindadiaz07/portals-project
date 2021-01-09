@@ -15,3 +15,9 @@ body{
   position: absolute;
   left: 10vw;
 }
+
+#compass-icon{
+  position: fixed;
+  width: 7vw;
+  z-index: 1;
+}

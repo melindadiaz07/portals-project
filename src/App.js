@@ -10,6 +10,10 @@ import Nav from './components/Nav'
 import Map from './components/Map'
 import Abydos from './components/Abydos'
 import Sphinx from './components/Sphinx'
+import Khafre from './components/Khafre'
+import Khufu from './components/Khufu'
+import Menkaure from './components/Menkaure'
+
 
 function App() {
   return (
@@ -28,9 +32,13 @@ function App() {
 
         <Route exact path="/sphinx" render={() => <Sphinx />} />
 
-      </Switch>
+        <Route exact path="/khafre" render={() => <Khafre />} />
 
-    
+        <Route exact path="/khufu" render={() => <Khufu />} />
+
+        <Route exact path="/menkaure" render={() => <Menkaure />} />
+
+      </Switch>
 
       </Router>
     </div>

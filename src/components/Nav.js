@@ -5,13 +5,6 @@ import compass from  '../images/compass.png'
 const Nav = () => {
 
 
-  // const history = useHistory()
-
-  // const openMap = () => {
-  //   console.log("clicked compass")
-  //   history.push('/map')
-  // }
-
   return(
 
     <div>

@@ -9,6 +9,7 @@ import Home from './components/Home'
 import Nav from './components/Nav'
 import Map from './components/Map'
 import Abydos from './components/Abydos'
+import Sphinx from './components/Sphinx'
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
 
         <Route exact path="/abydos" render={() => <Abydos />} />
 
-      
+        <Route exact path="/sphinx" render={() => <Sphinx />} />
+
       </Switch>
 
     

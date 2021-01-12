@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom'
 
 const Khafre = () => {
 
@@ -9,4 +10,4 @@ const Khafre = () => {
   )
 }
 
-export default Khafre;
+export default withRouter(Khafre);

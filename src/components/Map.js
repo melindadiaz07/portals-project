@@ -1,19 +1,24 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink, useHistory, withRouter } from 'react-router-dom'
+import { NavLink, useHistory, useLocation } from 'react-router-dom'
+
 import map from '../images/giza1.jpg'
 import ImageMap from 'image-map'
 
 
 
-const Map = () => {
+const Map = (props) => {
 
- const [changeRoute, setChangeRoute] = useState(false)
 
   const resizeImgMap = () => {
+    console.log("resize")
     ImageMap('img[usemap]')
+    if (props.url !== "") {
+      window.location.reload()
+    }
   }
 
-  useEffect(resizeImgMap, [changeRoute])
+  useEffect(resizeImgMap, [])
+  
 
   return(
     <div>
@@ -30,4 +35,4 @@ const Map = () => {
   )
 }
 
-export default withRouter(Map);
+export default Map;

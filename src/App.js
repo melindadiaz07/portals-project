@@ -1,9 +1,13 @@
 import './App.css';
+import React, { useEffect, useState } from 'react'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link, 
+  withRouter,
+  useLocation
+
 } from "react-router-dom";
 import Home from './components/Home'
 import Nav from './components/Nav'
@@ -15,20 +19,22 @@ import Khufu from './components/Khufu'
 import Menkaure from './components/Menkaure'
 
 
-function App() {
+const  App = () => {
+
+
+  const [url, setUrl] = useState("")
+
+
   return (
     <div className="App">
 
-      <Router>
-        <Nav />
+        <Nav url={setUrl}/>
 
       <Switch>
 
         <Route exact path="/" render={() => <Home />} />
           
-        <Route exact path="/map" render={() => <Map />} />
-
-        <Route exact path="/abydos" render={() => <Abydos />} />
+        <Route exact path="/map" render={() => <Map url={url}/>} />
 
         <Route exact path="/sphinx" render={() => <Sphinx />} />
 
@@ -40,9 +46,9 @@ function App() {
 
       </Switch>
 
-      </Router>
+    
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);

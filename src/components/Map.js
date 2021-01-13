@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useHistory, useLocation } from 'react-router-dom'
-
 import map from '../images/giza1.jpg'
 import ImageMap from 'image-map'
 
@@ -22,6 +21,7 @@ const Map = (props) => {
 
   return(
     <div>
+      
       <img src={map} alt="map of giza" id="map-image" useMap="#image-map"/>
 
       <map name="image-map">

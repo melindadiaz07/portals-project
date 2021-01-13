@@ -49,6 +49,20 @@ body{
   position: relative;
 }
 
+#sphinx-image-container{
+  position: relative;
+}
+
+#sphinx-overlay{
+  position: absolute;
+  height: 100%;
+  width: 50vw;
+  /* z-index: 1; */
+  background-color: grey;
+  opacity: 0;
+}
+
+
 
 /* Artifact Classes */
 .artifact-description{

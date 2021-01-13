@@ -7,7 +7,6 @@ import {
   Link, 
   withRouter,
   useLocation
-
 } from "react-router-dom";
 import Home from './components/Home'
 import Nav from './components/Nav'
@@ -36,7 +35,7 @@ const  App = () => {
           
         <Route exact path="/map" render={() => <Map url={url}/>} />
 
-        <Route exact path="/sphinx" render={() => <Sphinx />} />
+        <Route exact path="/sphinx" render={() => <Sphinx url={url} />} />
 
         <Route exact path="/khafre" render={() => <Khafre />} />
 

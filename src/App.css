@@ -35,3 +35,23 @@ body{
   left: 10vw;
 }
 
+/* Sphinx Component */
+
+#sphinx-container{
+  display: grid;
+  grid-template-columns: 50vw;
+  justify-content: center;
+  padding-top: 10vh;
+}
+
+#sphinx-image{
+  width: 50vw;
+  position: relative;
+}
+
+
+/* Artifact Classes */
+.artifact-description{
+  position: relative;
+  margin-top: 7vh;
+}
